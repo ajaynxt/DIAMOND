@@ -1,0 +1,18 @@
+/* Diamond V109: lightweight animated page background. No video and no extra images. */
+html{background:#fff7e8;}
+body{
+  background-color:#fffaf0;
+  background-image:
+    radial-gradient(circle at 12% 20%, rgba(224,174,57,.08), transparent 26%),
+    radial-gradient(circle at 88% 76%, rgba(139,0,11,.055), transparent 28%),
+    radial-gradient(circle at 52% 44%, rgba(255,255,255,.35), transparent 34%);
+  background-size:125% 125%,115% 115%,105% 105%;
+  background-position:0% 0%,100% 100%,50% 50%;
+  animation:diamondAmbientBackground 28s ease-in-out infinite alternate;
+}
+@keyframes diamondAmbientBackground{
+  0%{background-position:0% 0%,100% 100%,50% 50%;}
+  50%{background-position:12% 8%,88% 92%,54% 46%;}
+  100%{background-position:24% 16%,76% 84%,46% 58%;}
+}
+@media(prefers-reduced-motion:reduce){body{animation:none;}}

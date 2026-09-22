@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <defs>
+    <g id="cake" stroke="#8a6d42" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.32">
+      <path d="M18 50h34v22H18z"/><path d="M23 50v-8c0-6 7-11 12-5 5-6 12-1 12 5v8"/><path d="M18 60c6 5 10-5 17 0s12-5 17 0"/>
+    </g>
+    <g id="cup" stroke="#8a6d42" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.28">
+      <path d="M142 28h32l-4 34h-24z"/><path d="M142 28c4-11 28-11 32 0"/><path d="M151 19c0-7 10-7 10 0"/><path d="M150 41h17"/>
+    </g>
+    <g id="dmark" opacity="0.22">
+      <text x="108" y="132" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#b08a4a">D</text>
+      <circle cx="118" cy="120" r="30" stroke="#b08a4a" stroke-width="1.4" fill="none"/>
+    </g>
+  </defs>
+  <rect width="220" height="220" fill="none"/>
+  <use href="#cake" x="0" y="0"/>
+  <use href="#cup" x="0" y="0"/>
+  <use href="#dmark" x="0" y="0"/>
+  <use href="#cake" x="130" y="116" transform="rotate(8 150 140)"/>
+  <use href="#cup" x="-110" y="116" transform="rotate(-9 50 160)"/>
+</svg>

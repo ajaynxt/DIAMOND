@@ -1,0 +1,291 @@
+/* Diamond universal mobile navigation V94 */
+.mobileDotsV94{display:none}
+.mobileMenuOverlayV94,.mobileMenuPanelV94{display:none}
+@media (max-width:900px){
+  /* Keep the mobile quick bar clean everywhere: exactly Bakery | Restaurant | Sweets */
+  .headerQuickBarV81,.headerQuickBarV82{
+    min-height:48px!important;height:48px!important;padding:0 14px!important;margin:0!important;
+    display:flex!important;align-items:center!important;justify-content:center!important;gap:0!important;
+    overflow:hidden!important;white-space:nowrap!important;border-top:1px solid rgba(216,165,43,.55)!important;
+    border-bottom:1px solid rgba(216,165,43,.38)!important;background:#fffaf0!important;
+  }
+  .headerQuickBarV81>a,.headerQuickBarV82>a{
+    flex:1 1 0!important;min-width:0!important;width:auto!important;text-align:center!important;
+    display:block!important;padding:8px 3px!important;margin:0!important;font-size:14px!important;line-height:1!important;
+    color:#65030a!important;font-weight:700!important;letter-spacing:.01em!important;text-decoration:none!important;
+  }
+  .headerQuickBarV81>span,.headerQuickBarV82>span{display:block!important;flex:0 0 1px!important;width:1px!important;height:23px!important;background:rgba(125,0,8,.34)!important;margin:0!important}
+  .headerQuickActionsV82{display:none!important}
+  .quickOrderV82,.quickBtnV82{display:none!important}
+
+  /* Hide older hamburger/navigation implementations on mobile so V94 is the only menu. */
+  .siteNav .hamb,.siteNavV81 .hamb,.siteNavV82 .hamb{display:none!important}
+  .siteNav .navLinks,.siteNavV81 .navLinks,.siteNavV82 .navLinks{display:none!important}
+  #mobileNavBackdrop{display:none!important}
+
+  .mobileDotsV94{
+    position:absolute;right:14px;top:50%;transform:translateY(-50%);
+    width:46px;height:46px;border-radius:15px;border:1px solid rgba(216,165,43,.55);
+    background:linear-gradient(145deg,#7d0008,#4d0005);color:#ffe9ad;
+    display:flex!important;align-items:center;justify-content:center;gap:4px;padding:0;z-index:10002;
+    box-shadow:0 10px 26px rgba(65,0,0,.28);transition:transform .32s cubic-bezier(.2,.9,.2,1),box-shadow .25s ease,background .25s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .mobileDotsV94 span{width:5px;height:5px;border-radius:50%;background:#ffe9ad;transition:transform .32s ease,opacity .25s ease}
+  .mobileDotsV94:active{transform:translateY(-50%) scale(.94)}
+  .mobileDotsV94.isOpen{box-shadow:0 0 0 5px rgba(216,165,43,.12),0 14px 32px rgba(65,0,0,.36)}
+  .mobileDotsV94.isOpen span:nth-child(1){transform:translateY(-5px)}
+  .mobileDotsV94.isOpen span:nth-child(3){transform:translateY(5px)}
+
+  .mobileMenuOverlayV94{
+    display:block;position:fixed;inset:0;z-index:9997;background:rgba(20,0,2,.26);
+    opacity:0;pointer-events:none;transition:opacity .28s ease;
+    backdrop-filter:blur(0);-webkit-backdrop-filter:blur(0);
+  }
+  .mobileMenuOverlayV94.open{
+    opacity:1;pointer-events:auto;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  }
+  .mobileMenuPanelV94{
+    display:flex;position:fixed;z-index:9999;right:12px;top:72px;width:min(320px,calc(100vw - 24px));
+    flex-direction:column;padding:10px;border:1px solid rgba(216,165,43,.36);border-radius:22px;
+    background:rgba(78,0,5,.96);box-shadow:0 28px 75px rgba(38,0,0,.46);
+    opacity:0;transform:translateY(-12px) scale(.96);transform-origin:top right;
+    pointer-events:none;transition:opacity .28s ease,transform .32s cubic-bezier(.2,.9,.2,1);
+    max-height:calc(100vh - 92px);overflow:auto;
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  }
+  .mobileMenuPanelV94.open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+  .mobileMenuPanelV94 a,.mobileMenuPanelV94 button{
+    width:100%;display:flex;align-items:center;min-height:48px;padding:13px 15px;margin:2px 0;
+    border:0;border-radius:14px;background:transparent;color:#fff8e8;text-decoration:none;
+    font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;text-align:left;
+    transition:background .2s ease,transform .2s ease,color .2s ease;
+  }
+  .mobileMenuPanelV94 a:hover,.mobileMenuPanelV94 a:focus-visible,.mobileMenuPanelV94 button:hover{
+    background:rgba(255,255,255,.10);color:#ffe08a;transform:translateX(3px);outline:none
+  }
+  .mobileMenuPanelV94 .menuDividerV94{height:1px;background:rgba(255,220,150,.14);margin:6px 7px}
+  .mobileMenuPanelV94 .menuOrderV94{margin-top:5px;background:linear-gradient(135deg,#efc14a,#d59c1b);color:#3f0903;justify-content:center;text-align:center;font-family:Montserrat,system-ui,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.06em;font-weight:900}
+  .mobileMenuPanelV94 .menuOrderV94:hover{color:#3f0903;background:linear-gradient(135deg,#f2c95b,#e0a820)}
+  body.mobileMenuV94Open{overflow:hidden}
+}
+
+/* V95 mobile hamburger: clean 3-line icon, anchored inside header row */
+@media(max-width:760px){
+  .stickyHeaderShellV83 .siteNavV81,
+  .stickyHeaderShellV83 .siteNavV82,
+  .stickyHeaderShellV83 .siteNav{
+    position:relative!important;
+    overflow:visible!important;
+  }
+
+  /* Use the original hamburger trigger; hide the old V94 dot trigger. */
+  #mobileDotsV94{display:none!important}
+  .stickyHeaderShellV83 .hamb{
+    position:absolute!important;
+    right:12px!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    width:46px!important;
+    height:46px!important;
+    min-width:46px!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    flex-direction:column!important;
+    gap:5px!important;
+    border:1px solid rgba(216,168,46,.78)!important;
+    border-radius:14px!important;
+    background:linear-gradient(145deg,#8d000a,#5b0005)!important;
+    box-shadow:0 10px 24px rgba(77,0,6,.26),inset 0 1px 0 rgba(255,255,255,.12)!important;
+    z-index:1000002!important;
+    transition:transform .36s cubic-bezier(.2,.85,.2,1),box-shadow .28s ease,background .28s ease!important;
+  }
+  .stickyHeaderShellV83 .hamb span{
+    display:block!important;
+    width:23px!important;
+    height:3px!important;
+    border-radius:999px!important;
+    background:#ffe3a0!important;
+    opacity:1!important;
+    transform:none!important;
+    box-shadow:none!important;
+    transition:transform .36s cubic-bezier(.2,.85,.2,1),opacity .2s ease,width .28s ease!important;
+  }
+  .stickyHeaderShellV83 .hamb.isOpen{
+    transform:translateY(-50%) rotate(180deg)!important;
+    box-shadow:0 14px 30px rgba(77,0,6,.34),0 0 0 5px rgba(216,168,46,.10)!important;
+  }
+  .stickyHeaderShellV83 .hamb.isOpen span:nth-child(1){transform:translateY(8px) rotate(45deg)!important;width:23px!important}
+  .stickyHeaderShellV83 .hamb.isOpen span:nth-child(2){opacity:0!important;width:8px!important}
+  .stickyHeaderShellV83 .hamb.isOpen span:nth-child(3){transform:translateY(-8px) rotate(-45deg)!important;width:23px!important}
+
+  /* Keep exactly three quick categories, evenly spaced and never under the button. */
+  .stickyHeaderShellV83 .headerQuickBarV81{
+    position:relative!important;
+    z-index:1!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-evenly!important;
+    width:100%!important;
+    min-height:46px!important;
+    height:46px!important;
+    padding:0 10px!important;
+    gap:0!important;
+    overflow:hidden!important;
+  }
+  .stickyHeaderShellV83 .headerQuickBarV81>a{
+    flex:1 1 33.333%!important;
+    min-width:0!important;
+    text-align:center!important;
+    justify-content:center!important;
+    padding:0 6px!important;
+    font-size:15px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+}
+
+/* V96 — mobile header layout correction: hamburger stays in the top header row,
+   while the three category names get their own full-width row. Nothing overlaps. */
+@media(max-width:760px){
+  .stickyHeaderShellV83 .siteNavV81{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:60px minmax(0,1fr) 52px!important;
+    align-items:center!important;
+    height:76px!important;
+    min-height:76px!important;
+    padding:0 12px!important;
+    gap:8px!important;
+    overflow:visible!important;
+    z-index:1000000!important;
+  }
+
+  .stickyHeaderShellV83 .siteNavV81 .brandBlockV81{
+    grid-column:1!important;
+    grid-row:1!important;
+    justify-self:start!important;
+    min-width:0!important;
+    display:flex!important;
+  }
+  .stickyHeaderShellV83 .siteNavV81 .brandFullLogoV81{
+    width:52px!important;
+    max-width:52px!important;
+    height:52px!important;
+    max-height:52px!important;
+    object-fit:contain!important;
+  }
+  .stickyHeaderShellV83 .siteNavV81 .brandMainV81{
+    grid-column:2!important;
+    grid-row:1!important;
+    min-width:0!important;
+    max-width:100%!important;
+    overflow:hidden!important;
+    justify-self:stretch!important;
+    padding:0 2px!important;
+    text-align:center!important;
+  }
+  .stickyHeaderShellV83 .siteNavV81 .brandMainV81 b{
+    display:block!important;
+    font-size:22px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+  .stickyHeaderShellV83 .siteNavV81 .brandMainV81 small{
+    display:block!important;
+    margin-top:4px!important;
+    font-size:7px!important;
+    line-height:1.1!important;
+    white-space:nowrap!important;
+  }
+
+  /* Hamburger is part of the header row, never the category row. */
+  .stickyHeaderShellV83 .siteNavV81 > .hamb,
+  .stickyHeaderShellV83 .siteNavV81 #hamb{
+    grid-column:3!important;
+    grid-row:1!important;
+    position:relative!important;
+    inset:auto!important;
+    justify-self:end!important;
+    width:44px!important;
+    height:44px!important;
+    min-width:44px!important;
+    min-height:44px!important;
+    margin:0!important;
+    padding:0!important;
+    transform:none!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    flex-direction:column!important;
+    gap:5px!important;
+    border-radius:13px!important;
+  }
+  .stickyHeaderShellV83 .siteNavV81 > .hamb.isOpen,
+  .stickyHeaderShellV83 .siteNavV81 #hamb.isOpen{
+    transform:rotate(180deg)!important;
+  }
+
+  /* Three category links get the entire second row and never sit beneath the icon. */
+  .stickyHeaderShellV83 .headerQuickBarV81{
+    position:relative!important;
+    z-index:999998!important;
+    width:100%!important;
+    min-height:52px!important;
+    height:52px!important;
+    padding:0 10px!important;
+    margin:0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) 1px minmax(0,1fr) 1px minmax(0,1fr)!important;
+    align-items:center!important;
+    gap:0!important;
+    overflow:hidden!important;
+  }
+  .stickyHeaderShellV83 .headerQuickBarV81>a{
+    width:auto!important;
+    min-width:0!important;
+    flex:none!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:0 6px!important;
+    margin:0!important;
+    font-size:15px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+  .stickyHeaderShellV83 .headerQuickBarV81>a:nth-of-type(1){grid-column:1!important}
+  .stickyHeaderShellV83 .headerQuickBarV81>span:nth-of-type(1){grid-column:2!important}
+  .stickyHeaderShellV83 .headerQuickBarV81>a:nth-of-type(2){grid-column:3!important}
+  .stickyHeaderShellV83 .headerQuickBarV81>span:nth-of-type(2){grid-column:4!important}
+  .stickyHeaderShellV83 .headerQuickBarV81>a:nth-of-type(3){grid-column:5!important}
+  .stickyHeaderShellV83 .headerQuickBarV81>span{
+    width:1px!important;
+    height:24px!important;
+    margin:0!important;
+    background:rgba(125,0,8,.34)!important;
+  }
+}
+
+@media(max-width:380px){
+  .stickyHeaderShellV83 .siteNavV81{
+    grid-template-columns:54px minmax(0,1fr) 50px!important;
+    padding:0 10px!important;
+  }
+  .stickyHeaderShellV83 .siteNavV81 .brandFullLogoV81{
+    width:48px!important;height:48px!important;max-width:48px!important;max-height:48px!important;
+  }
+  .stickyHeaderShellV83 .siteNavV81 .brandMainV81 b{font-size:19px!important}
+  .stickyHeaderShellV83 .siteNavV81 .brandMainV81 small{font-size:6.3px!important}
+  .stickyHeaderShellV83 .headerQuickBarV81>a{font-size:14px!important;padding:0 3px!important}
+}
+
+/* V98 direct Order Now link: fixed in the top header row and never becomes a popup. */
+@media(max-width:760px){
+  .stickyHeaderShellV83 .siteNavV81 > .orderDirectV98{grid-column:3!important;grid-row:1!important;position:relative!important;inset:auto!important;justify-self:end!important;align-self:center!important;}
+}

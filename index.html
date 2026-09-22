@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Bakery | Restaurant | Sweets</title>
+  <meta name="description" content="Diamond Bakery, Restaurant & Sweets — Shimla favourite since 2002.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://www.gstatic.com">
+  <link rel="dns-prefetch" href="https://www.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@400;700;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style id="diamondFirstPaint">html,body{margin:0;background:#fff1d1;color:#2b1715}a{color:inherit}</style>
+  <style id="diamondCriticalV89">
+html,body{margin:0;padding:0}
+body{background:#fff1d1}
+.homeSlideHero.splitHomeHero{
+  display:grid;
+  grid-template-columns:minmax(330px,40%) minmax(0,60%);
+  min-height:calc(100vh - 82px);
+  background:#530006
+}
+.homeSlideTextPanel{
+  min-width:0;
+  padding:clamp(30px,4.4vw,58px) clamp(24px,4.2vw,60px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:#530006;
+  color:#fff
+}
+.heroPanelBrand{display:flex;align-items:center;gap:14px}
+.heroPanelMark{width:72px;height:72px;object-fit:contain}
+.heroPanelBrand b{font:700 34px Georgia,serif;color:#fff}
+.heroPanelBrand small{display:block;color:#e1ad37;font:700 9px Arial,sans-serif}
+.homeSlideTextPanel h1{
+  color:#fff;
+  font:700 clamp(46px,5vw,72px)/.94 Georgia,serif;
+  margin:18px 0
+}
+.homeSlideTextPanel p{color:#ffe7ba}
+.homeHeroActions{display:flex;gap:12px;flex-wrap:wrap}
+.homeHeroStats{display:grid;grid-template-columns:repeat(3,1fr)}
+.homeSlideVisual{
+  position:relative;
+  display:grid;
+  place-items:center;
+  padding:clamp(28px,4vw,56px);
+  overflow:hidden;
+  background:linear-gradient(135deg,#170706,#2a0807)
+}
+.homeSlideStack{
+  position:relative;
+  width:min(88%,820px);
+  aspect-ratio:4/3;
+  overflow:hidden;
+  border:5px solid #e1ad37;
+  border-radius:30px;
+  background:#120403
+}
+.homeSlide{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  opacity:0
+}
+.homeSlide.active,.homeSlide.instantHero{opacity:1}
+.homeSlide.instantHero{
+  background-image:url("assets/home-slides/home-v30-01-brownie-pack.webp");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat
+}
+.homeSlide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block
+}
+.homeSlideNav,.homeSlideDots{visibility:hidden}
+.fullCssReady .homeSlideNav,
+.fullCssReady .homeSlideDots{visibility:visible}
+
+@media(max-width:980px){
+  .homeSlideHero.splitHomeHero{grid-template-columns:1fr;min-height:0}
+  .homeSlideTextPanel{padding:30px 20px 26px}
+  .homeSlideVisual{padding:22px 16px 48px}
+  .homeSlideStack{width:min(100%,720px);border-width:4px;border-radius:24px}
+}
+@media(max-width:520px){
+  .homeSlideTextPanel{padding:24px 16px 22px}
+  .homeSlideTextPanel h1{font-size:38px}
+  .homeSlideVisual{padding:16px 12px 42px}
+}
+</style>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="speed-background.css">
+<script>document.documentElement.classList.add('fullCssReady')</script>
+<link rel="preload" as="image" href="assets/home-slides/home-v30-01-brownie-pack.webp" fetchpriority="high">
+<link rel="stylesheet" href="mobile-nav-v94.css"><script defer src="mobile-nav-v94.js"></script></head>
+<body>
+<div class="stickyHeaderShellV83">
+<nav class="siteNav siteNavV81" data-edit-section="header-logo">
+  <a class="brandBlock brandBlockV81" href="index.html" aria-label="Diamond Home">
+    <img src="assets/optimized-v1/diamond-header-fast.webp" alt="Diamond Bakery Restaurant Sweets" class="brandFullLogoV81">
+  </a>
+
+  <div class="brandDividerV81" aria-hidden="true"></div>
+
+  <a class="brandMainV81" href="index.html" aria-label="Diamond Home">
+    <b>DIAMOND</b>
+    <small>BAKERY | RESTAURANT | SWEETS</small>
+  </a>
+
+  <button class="hamb" id="hamb" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+
+  <div class="navLinks" id="navLinks">
+    <a href="index.html">Home</a><a href="https://diamondrestaurants.com/menu.html">Menu</a><a href="index.html#categories">Categories</a><a href="index.html#stories">Stories</a><a href="https://diamondrestaurants.com/app.html">App</a><a href="index.html#contact">Contact</a>
+  </div>
+  <button class="mobileNavBackdrop" id="mobileNavBackdrop" type="button" aria-label="Close menu"></button>
+
+  <a class="navOrder orderDirectV98" href="https://uen.io/diamondrestaurant" target="_blank" rel="noopener noreferrer">Order Now</a>
+
+  <span class="visualEditHook headerDoneHook" data-hook="header-logo" hidden><img src="assets/icons/check-done.svg" alt="Done"></span>
+</nav>
+<div class="headerQuickBarV81" data-edit-section="header-quick-links" aria-label="Quick categories">
+  <a href="https://diamondrestaurants.com/menu.html#bakery">Bakery</a>
+  <span aria-hidden="true"></span>
+  <a href="https://diamondrestaurants.com/menu.html#restaurant">Restaurant</a>
+  <span aria-hidden="true"></span>
+  <a href="https://diamondrestaurants.com/menu.html#sweets">Sweets</a>
+</div>
+</div>
+<header class="homeSlideHero splitHomeHero" id="home" aria-label="Diamond homepage slider">
+  <div class="homeSlideTextPanel">
+    <div class="heroPanelBrand"><img class="heroPanelMark" src="assets/optimized-v1/diamond-hero-mark-fast.webp" alt="Diamond"><div><b>DIAMOND</b><small>BAKERY | RESTAURANT | SWEETS</small></div></div>
+    <span class="heroEyebrow heroSinceVeg"><img src="assets/icons/pure-veg.svg" alt="Pure Veg"><span id="homeHeroLine">Since 2002 • Shimla</span></span>
+    <h1 id="homeHeroTitle">You deserve all<br>the <span>sweetness.</span></h1>
+    <p id="homeHeroDesc">Freshly baked every day.
+Traditional sweets crafted with love.
+A restaurant that feels like home.</p>
+    <div class="homeHeroActions">
+      <a class="btn btnMaroon heroOrderSameV81" id="homeHeroPrimary" href="https://uen.io/diamondrestaurant" target="_blank" rel="noopener noreferrer">Order online</a>
+      <a class="btn btnOutline" id="homeHeroSecondary" href="https://diamondrestaurants.com/menu.html">View menu</a>
+    </div>
+    <div class="homeHeroStats" aria-label="Diamond highlights">
+      <div><b id="homeStatOneNum">Since</b><small id="homeStatOneLabel">2002</small></div>
+      <div><b id="homeStatTwoNum">Fresh</b><small id="homeStatTwoLabel">Menu Daily</small></div>
+      <div><b id="homeStatThreeNum">All-in-One</b><small id="homeStatThreeLabel">Bakery • Sweets • Chaat</small></div>
+    </div>
+  </div>
+  <div class="homeSlideVisual">
+    <div class="homeSlideStack" id="homeSlideStack">
+      <article class="homeSlide active instantHero" aria-label="Brownie Pack"></article>
+    </div>
+    <button class="homeSlideNav homeSlidePrev" id="homeSlidePrev" type="button" aria-label="Previous slide">‹</button>
+    <button class="homeSlideNav homeSlideNext" id="homeSlideNext" type="button" aria-label="Next slide">›</button>
+    <div class="homeSlideDots" id="homeSlideDots" aria-label="Home slide dots"></div>
+  </div>
+</header>
+<section class="cakeShowcase" id="cakes">
+  <div class="sectionTitle compact"><span class="kicker">Crafted With Care</span><h2>Moments Made <span>Sweeter</span></h2><p>Fresh celebration cakes for every special moment.</p><a class="btn btnMaroon" href="https://diamondrestaurants.com/menu.html#cakes">Explore Cakes</a></div>
+  <div class="cakeOrbitPanel">
+    <button class="orbitArrow" id="cakePrev" aria-label="Previous cake">‹</button>
+    <div class="cakeOrbit" id="cakeOrbit"><div class="centerBadge centerBadgeV81"><img src="assets/optimized-v1/cake-center-current.webp" alt="Diamond"></div></div>
+    <button class="orbitArrow right" id="cakeNext" aria-label="Next cake">›</button>
+    <div class="cakeNameWrap"><div class="activeCakeName" id="activeCakeName">Mango Cake</div><small id="activeCakePrice">SM ₹490 / ST ₹1050</small></div>
+    <div class="orbitDots" id="cakeDots"></div>
+  </div>
+</section>
+<main>
+  <section class="categoryShowcase" id="categories" data-edit-section="diamond-store-categories"><span class="visualEditHook" data-hook="category-cards" hidden><img src="assets/icons/check-done.svg" alt="Done"></span>
+    <div class="sideIntro"><span class="kicker">Our Menu</span><h2>Explore Categories</h2><p>Sweets, bakery, chaat, restaurant favourites and store links in one premium Diamond experience.</p><div class="smallArrows"><button id="catLeft">‹</button><button id="catRight">›</button></div></div>
+    <div class="categoryRail" id="categoryRail"></div>
+  </section>
+  <section class="mealShowcase" id="special-meals" data-edit-section="special-meals"><span class="visualEditHook" data-hook="special-meals" hidden><img src="assets/icons/check-done.svg" alt="Done"></span>
+    <div class="mealText"><span class="kicker">Special meals</span><h2 id="mealTitle">Special Thali</h2><p id="mealDesc">Paneer dish, dal makhani, rice, raita, salad, papad and fresh breads.</p><a class="btn btnMaroon" href="https://diamondrestaurants.com/menu.html#special-meals">View Details</a></div>
+    <button class="mealArrow" id="mealPrev">‹</button><div class="mealStage"><div class="mealSide"><img id="mealPrevImg" loading="lazy" decoding="async" src="assets/images/meal-exec.webp" alt=""></div><div class="mealMain"><img id="mealMainImg" loading="lazy" decoding="async" src="assets/images/meal-special.webp" alt="Special Thali"></div><div class="mealSide"><img id="mealNextImg" loading="lazy" decoding="async" src="assets/images/meal-paneer.webp" alt=""></div></div><button class="mealArrow" id="mealNext">›</button>
+    <div class="mealTabs" id="mealTabs"></div>
+  </section>
+  <section class="sweetShelf" id="sweets-pastry" data-edit-section="fresh-picks"><span class="visualEditHook" data-hook="fresh-picks" hidden><img src="assets/icons/check-done.svg" alt="Done"></span><div class="sweetPanel"><span class="scriptWord">Fresh Picks</span><h2>Sweets & Pastry</h2><p>Premium sweets, pastries and bakery favourites crafted fresh with Diamond quality.</p><div class="smallArrows"><button id="sweetLeft">‹</button><button id="sweetRight">›</button></div></div><div class="ovalRail" id="sweetRail"></div></section>
+  <section class="deliveryBlock deliveryApproved deliveryV13" id="delivery" data-edit-section="delivery"><span class="visualEditHook" data-hook="delivery" hidden><img src="assets/icons/check-done.svg" alt="Done"></span>
+  <div class="deliveryText">
+    <span class="kicker">Delivery</span>
+    <h2>Delivered Fresh <br>from <em>Diamond</em></h2>
+    <p>Order sweets, bakery items and restaurant favourites with careful packing and quick service.</p>
+    <b class="phonePill contactPending" data-edit-field="telephone" hidden></b>
+  </div>
+  <div class="deliveryFoodShowcase" id="deliveryFocus" data-edit-section="delivery-food-photos">
+    <div class="deliveryOrbitRing" aria-hidden="true"></div>
+    <a class="orbitFood orbitCake" href="https://diamondrestaurants.com/menu.html#cakes" data-img="assets/images/cake-truffle.webp"><img loading="lazy" decoding="async" src="assets/images/cake-truffle.webp" alt="Cakes"><span>Cakes</span></a>
+    <a class="orbitFood orbitSweets" href="https://diamondrestaurants.com/menu.html#sweets" data-img="assets/images/sweet-laddu.webp"><img loading="lazy" decoding="async" src="assets/images/sweet-laddu.webp" alt="Sweets"><span>Sweets</span></a>
+    <a class="orbitFood orbitMeals" href="https://diamondrestaurants.com/menu.html#special-meals" data-img="assets/images/meal-special.webp"><img loading="lazy" decoding="async" src="assets/images/meal-special.webp" alt="Meals"><span>Meals</span></a>
+    <a class="orbitFood orbitBakery" href="https://diamondrestaurants.com/menu.html#bakery" data-img="assets/menu/bakery/muffin-mix-fruit.webp"><img loading="lazy" decoding="async" src="assets/menu/bakery/muffin-mix-fruit.webp" alt="Bakery"><span>Bakery</span></a>
+    <div class="deliveryFoodFrame premiumCenterFood">
+      <img id="deliveryFoodImg" src="assets/images/sweet-laddu.webp" alt="Diamond fresh food" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <div class="deliveryPhotoCard">
+    <img data-edit-field="delivery-photo" data-admin-preview="true" src="assets/delivery/delivery-building-photo.webp" alt="Diamond delivery service" loading="lazy" decoding="async">
+  </div>
+  <div class="deliveryCta"><div><h3>Choose your favourite</h3><p>Browse menu, select items and order quickly through website or app.</p></div><a class="btn btnMaroon" href="https://uen.io/diamondrestaurant" target="_blank" rel="noopener">Order Now</a></div>
+</section>
+  <section class="stories storiesLuxury" id="stories">
+  <div class="sectionTitle storyTitle"><span class="kicker">Diamond Stories</span><h2>More Than <em>Just Food</em></h2><p>Diamond is about moments — the joy of families, the sweetness of childhood, the pride of Shimla and the love in every bite.</p></div>
+  <button class="storyArrow storyPrev" id="storyPrev" aria-label="Previous story">‹</button>
+  <div class="storyRail" id="storyRail"></div>
+  <button class="storyArrow storyNext" id="storyNext" aria-label="Next story">›</button>
+  <div class="storyMeta"><span id="storyCount">01 / 15</span><div class="storyDots" id="storyDots"></div></div>
+  <a class="btn btnGold" href="https://diamondrestaurants.com/menu.html">Explore our menu</a>
+</section>
+  <section class="reviews"><div class="sectionTitle"><span class="kicker">Happy Customers</span><h2>What Shimla Says</h2><p>Trusted by families, celebrations and visitors.</p></div><div class="reviewGrid" id="reviewGrid"></div><div class="reviewActions"><a class="btn btnGold reviewGoogle" href="https://search.google.com/local/writereview?placeid=ChIJsR6d57d4BTkRu6lcEKPn1Eg&source=g.page.m.dd._&laa=lu-desktop-reviews-dialog-review-solicitation" target="_blank" rel="noopener"><img src="assets/icons/google-review-clean.png" alt="Google review"> Review Us on Google</a></div></section>
+  <section class="visit visitV4" id="contact">
+  <div class="visitCard menuCtaCard">
+    <span class="kicker">Explore Diamond</span>
+    <h2>View Our Full Menu</h2>
+    <p>Fresh cakes, sweets, bakery favourites, chaat and restaurant dishes — browse everything section-wise.</p>
+    <div class="visitActions"><a class="btn btnMaroon bigMenuBtn" href="https://diamondrestaurants.com/menu.html">View Full Menu</a><a class="btn btnGold" href="https://uen.io/diamondrestaurant" target="_blank" rel="noopener">Order Now</a></div>
+    <div class="socialRow"><a href="https://www.instagram.com/diamondbakerysweetsrestaurant?igsh=MTBqZTR3dmM1ODN3ZQ==" target="_blank" rel="noopener"><img class="inlineSocialIcon" src="assets/icons/instagram-clean.png" alt="Instagram"> @diamondbakerysweetsrestaurant</a></div>
+  </div>
+  <div class="visitCard cream timingCard">
+    <span class="kicker">Find Us</span>
+    <h2>Contact & Timing</h2>
+    <div class="contactIconList contactIconListV81" data-edit-section="contact-info">
+      <p class="contactLine companyLine companyLineLogoV81" data-edit-field="company"><img loading="lazy" decoding="async" src="assets/optimized-v1/diamond-transparent-full-logo-v81.webp" alt="Diamond"><b>A unit of</b> <span>Srijan Bhog Companies Pvt. Ltd.</span></p>
+      <p class="contactLine branchLine" data-edit-field="branch-1"><img src="assets/icons/location.svg" alt=""><b>Branch 1:</b> <span>B.C.S. New Shimla-9 (HP)</span></p>
+      <p class="contactLine callLine" data-edit-field="branch-1-phone"><img src="assets/icons/phone.svg" alt=""><b>Call:</b> <span>0177-2670121, 2670125</span></p>
+      <p class="contactLine branchLine" data-edit-field="branch-2"><img src="assets/icons/location.svg" alt=""><b>Branch 2:</b> <span>Main Road, Shoghi Bazaar, Shimla (HP)</span></p>
+      <p class="contactLine callLine" data-edit-field="branch-2-phone"><img src="assets/icons/phone.svg" alt=""><b>Call:</b> <span>0177-2661111</span></p>
+      <p class="contactLine emailLine" data-edit-field="email"><img src="assets/icons/gmail-v81.png" alt="Gmail"><b>Email:</b> <a href="mailto:srijanbhog@gmail.com">srijanbhog@gmail.com</a></p>
+      <div class="brandBadges"><span class="pureVegBadge"><img src="assets/icons/pure-veg.svg" alt="Pure Veg"> Pure Veg</span><span class="sinceBadge">Since 2002 • Shimla</span></div>
+    </div>
+  </div>
+  <div class="timingList"><div><b>Monday – Friday</b><span>8:00 AM – 9:00 PM</span></div><div><b>Saturday</b><span>8:00 AM – 10:00 PM</span></div><div><b>Sunday</b><span>9:00 AM – 9:00 PM</span></div><div><b>Festivals</b><span>Special Extended Hours</span></div></div>
+    <p><b>Free Home Delivery:</b> Above ₹300 within 2 km</p>
+    <div class="visitActions"><a class="btn btnMaroon" href="https://maps.app.goo.gl/bGiRSi4HL8HvzwQr9?g_st=ac" target="_blank" rel="noopener">Open Map</a><a class="btn btnGreen" href="https://diamondrestaurants.com/app.html">App & Links</a></div>
+  </div>
+</section>
+</main>
+<footer class="footer footerV5 premiumFooter footerV81" id="footerContact" data-edit-section="footer-links">
+  <div class="footerBrand">
+    <div class="footerVegTop"><img src="assets/icons/pure-veg.svg" alt="Pure Veg"><span>Pure Veg</span></div>
+    <img loading="lazy" decoding="async" src="assets/optimized-v1/diamond-logo-hq-white-card-v64.webp" alt="Diamond">
+    <div class="footerSinceText">Since 2002 • Shimla</div>
+    <span class="visualEditHook" data-hook="footer-brand" hidden><img src="assets/icons/check-done.svg" alt="Done"></span>
+  </div>
+
+  <div class="footerCol footerBusiness">
+    <h3>Diamond Restaurants</h3>
+    <p class="footerBizLine footerBizLogoV81"><img loading="lazy" decoding="async" src="assets/optimized-v1/diamond-transparent-full-logo-v81.webp" alt="Diamond">A unit of Srijan Bhog Companies Pvt. Ltd.</p>
+    <p class="footerBizLine"><img src="assets/icons/location.svg" alt=""><b>Branch 1:</b> B.C.S. New Shimla-9 (HP)</p>
+    <p class="footerBizLine"><img src="assets/icons/phone.svg" alt="">0177-2670121, 2670125</p>
+    <p class="footerBizLine"><img src="assets/icons/location.svg" alt=""><b>Branch 2:</b> Main Road, Shoghi Bazaar, Shimla (HP)</p>
+    <p class="footerBizLine"><img src="assets/icons/phone.svg" alt="">0177-2661111</p>
+    <p class="footerBizLine"><img src="assets/icons/gmail-v81.png" alt="Gmail"><a href="mailto:srijanbhog@gmail.com">srijanbhog@gmail.com</a></p>
+  </div>
+
+  <div class="footerCol footerQuick">
+    <h3>Quick Links</h3>
+    <a class="footerLink" href="https://diamondrestaurants.com/menu.html"><img src="assets/icons/menu.svg" alt="">View Full Menu</a>
+    <a class="footerLink" href="https://diamondrestaurants.com/app.html"><img src="assets/icons/app-link.svg" alt="">App & Order Links</a>
+    <a class="footerLink" href="https://diamondrestaurants.uengage.in/" target="_blank" rel="noopener"><img src="assets/icons/cart-green.svg" alt="">Mega Store</a>
+  </div>
+
+  <div class="footerCol footerVisit">
+    <h3>Follow & Review</h3>
+    <a class="footerLink" href="https://www.instagram.com/diamondbakerysweetsrestaurant?igsh=MTBqZTR3dmM1ODN3ZQ==" target="_blank" rel="noopener"><img src="assets/icons/instagram-clean.png" alt="">Instagram</a>
+    <a class="footerLink" href="https://www.facebook.com/share/1D3ha3ArBT/" target="_blank" rel="noopener"><img src="assets/icons/facebook-clean.png" alt="">Facebook</a>
+    <a class="footerLink" href="https://search.google.com/local/writereview?placeid=ChIJsR6d57d4BTkRu6lcEKPn1Eg&source=g.page.m.dd._&laa=lu-desktop-reviews-dialog-review-solicitation" target="_blank" rel="noopener"><img src="assets/icons/google-review-clean.png" alt="">Google Review</a>
+  </div>
+</footer><div class="copy">© 2026 Diamond Bakery, Restaurant & Sweets</div>
+<script type="module" src="script.js"></script>
+
+<button class="diamondBackToTop" id="diamondBackToTop"
+        type="button" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+(()=>{
+  const btn=document.getElementById('diamondBackToTop');
+  if(!btn) return;
+
+  const update=()=>{
+    btn.classList.toggle('show', window.scrollY > 450);
+  };
+
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+
+  btn.addEventListener('click',()=>{
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
+
+<div style="text-align:center;font-size:11px;color:#888;padding:8px 0;">Designed by <a href="https://ajaynxt.com/" target="_blank" rel="noopener" style="color:#222;text-decoration:none;font-weight:600;">ajaynxt.com</a></div></body></html>

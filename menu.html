@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Menu | Diamond Bakery Restaurant Sweets</title><style id="diamondFirstPaint">html,body{margin:0;background:#fffaf0;color:#2b1715}a{color:inherit}</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://www.gstatic.com"><link rel="dns-prefetch" href="https://www.gstatic.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="speed-background.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="menu-v91.css">
+
+<style id="ajay-menu-final-v93">
+
+/* =====================================
+   DIAMOND MENU FINAL RESPONSIVE FIX
+   ===================================== */
+
+html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+/* ---------- TOP QUICK BAR ---------- */
+
+.headerQuickBarV81{
+  width:100% !important;
+  min-height:48px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:16px !important;
+  padding:0 16px !important;
+  overflow:visible !important;
+  background:#fff9ee !important;
+}
+
+.headerQuickBarV81 > a{
+  flex:0 0 auto !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding:13px 5px !important;
+  margin:0 !important;
+  white-space:nowrap !important;
+  font-size:15px !important;
+  line-height:1 !important;
+  font-weight:700 !important;
+}
+
+/* one clean divider only */
+.headerQuickBarV81 > span{
+  display:none !important;
+}
+
+.headerQuickBarV81 > .ajTopDivider{
+  display:block !important;
+  width:1px !important;
+  height:20px !important;
+  flex:0 0 1px !important;
+  background:#d9bea1 !important;
+}
+
+/* Remove second Order Now / App Links block from this bar */
+.headerQuickActionsV81{
+  display:none !important;
+}
+
+/* ---------- SEARCH / ORDER AREA ---------- */
+
+/* remove the large box/background beneath Order Now */
+.dm91-tools{
+  border:0 !important;
+  box-shadow:none !important;
+  background:transparent !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  border-radius:0 !important;
+  padding:8px 0 4px !important;
+}
+
+.dm91-searchRow,
+.dm91-cats{
+  background:transparent !important;
+}
+
+/* ---------- CATEGORY NAMES ---------- */
+
+.dm91-cat{
+  height:auto !important;
+}
+
+.dm91-cat > span:last-child{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  width:100% !important;
+  min-height:23px !important;
+  white-space:normal !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+  overflow-wrap:normal !important;
+  word-break:normal !important;
+  line-height:1.18 !important;
+}
+
+/* ---------- MENU ITEM ---------- */
+
+.dm91-item{
+  grid-template-areas:
+    "photo copy price"
+    "photo copy order";
+  grid-template-columns:
+    var(--dm91-thumb)
+    minmax(0,1fr)
+    auto;
+  grid-template-rows:auto auto;
+}
+
+.dm91-photoFrame{
+  grid-area:photo;
+}
+
+.dm91-copy{
+  grid-area:copy;
+  min-width:0;
+}
+
+.dm91-price{
+  grid-area:price;
+  justify-self:end;
+}
+
+.dm91-itemOrder{
+  grid-area:order;
+  justify-self:end;
+  height:27px !important;
+  min-height:27px !important;
+  padding:0 9px !important;
+  border-radius:8px !important;
+  font-size:8px !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+  box-shadow:none !important;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width:900px){
+
+  .headerQuickBarV81{
+    min-height:46px !important;
+    gap:14px !important;
+    padding:0 12px !important;
+  }
+
+  .headerQuickBarV81 > a{
+    font-size:14px !important;
+    padding:12px 4px !important;
+  }
+
+  /* do not override hamburger/navLinks system */
+  .dm91-main{
+    width:min(calc(100% - 20px),1180px) !important;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:640px){
+
+  .headerQuickBarV81{
+    min-height:44px !important;
+    gap:12px !important;
+    padding:0 10px !important;
+  }
+
+  .headerQuickBarV81 > a{
+    font-size:13.5px !important;
+    padding:11px 3px !important;
+  }
+
+  .headerQuickBarV81 > .ajTopDivider{
+    height:18px !important;
+  }
+
+  .dm91-main{
+    width:calc(100% - 14px) !important;
+  }
+
+  .dm91-tools{
+    padding-top:6px !important;
+  }
+
+  .dm91-searchRow{
+    grid-template-columns:minmax(0,1fr) auto !important;
+    gap:7px !important;
+  }
+
+  .dm91-search{
+    width:100% !important;
+    min-width:0 !important;
+  }
+
+  .dm91-searchRow > .dm91-order{
+    height:38px !important;
+    padding:0 11px !important;
+    border-radius:10px !important;
+    white-space:nowrap !important;
+  }
+
+  .dm91-cats{
+    gap:5px !important;
+    padding:8px 4px 2px 0 !important;
+    overflow-x:auto !important;
+    overflow-y:visible !important;
+  }
+
+  .dm91-cat{
+    flex:0 0 68px !important;
+    min-width:68px !important;
+    padding:2px 1px !important;
+  }
+
+  .dm91-cat > span:last-child{
+    min-height:24px !important;
+    font-size:9px !important;
+  }
+
+  /* allow full item names - no ugly cut */
+  .dm91-name{
+    display:block !important;
+    overflow:visible !important;
+    -webkit-line-clamp:unset !important;
+    -webkit-box-orient:initial !important;
+    white-space:normal !important;
+    overflow-wrap:anywhere !important;
+    line-height:1.22 !important;
+  }
+
+  .dm91-item{
+    min-height:72px !important;
+    column-gap:7px !important;
+    row-gap:3px !important;
+  }
+
+  .dm91-price{
+    max-width:78px !important;
+    font-size:8.5px !important;
+  }
+
+  .dm91-itemOrder{
+    height:25px !important;
+    min-height:25px !important;
+    padding:0 7px !important;
+    font-size:7px !important;
+  }
+}
+
+/* ---------- VERY SMALL PHONE ---------- */
+
+@media (max-width:360px){
+
+  .headerQuickBarV81 > a{
+    font-size:13px !important;
+  }
+
+  .dm91-searchRow > .dm91-order{
+    padding:0 8px !important;
+    font-size:8px !important;
+  }
+
+  .dm91-cat{
+    flex-basis:64px !important;
+    min-width:64px !important;
+  }
+}
+
+</style>
+
+
+<style id="diamond-card-order-fix-v94">
+
+/* =========================================
+   MENU ITEM — FINAL CLEAN ORDER LINK
+   ========================================= */
+
+.dm91-item{
+  display:grid !important;
+  grid-template-columns:var(--dm91-thumb) minmax(0,1fr) auto !important;
+  grid-template-areas:
+    "photo copy price"
+    "photo copy price" !important;
+  align-items:center !important;
+  column-gap:10px !important;
+  row-gap:0 !important;
+  min-width:0 !important;
+  overflow:hidden !important;
+}
+
+.dm91-photoFrame{
+  grid-area:photo !important;
+  align-self:center !important;
+}
+
+.dm91-copy{
+  grid-area:copy !important;
+  min-width:0 !important;
+  align-self:center !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+}
+
+/* Product name must never get ugly clipped */
+.dm91-name{
+  width:100% !important;
+  margin:0 !important;
+  white-space:normal !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+  word-break:normal !important;
+  overflow-wrap:anywhere !important;
+  display:block !important;
+  -webkit-line-clamp:unset !important;
+  -webkit-box-orient:initial !important;
+  line-height:1.25 !important;
+}
+
+/* Price stays clean on right */
+.dm91-price{
+  grid-area:price !important;
+  align-self:center !important;
+  justify-self:end !important;
+  margin-left:6px !important;
+  white-space:nowrap !important;
+}
+
+/* ORDER NOW = simple premium text link, NO yellow background */
+.dm91-itemOrder{
+  position:static !important;
+  display:inline-flex !important;
+  width:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:6px 0 0 !important;
+  padding:0 !important;
+
+  background:transparent !important;
+  background-image:none !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+
+  color:#8b0b13 !important;
+  font:700 9px/1.2 "Montserrat",system-ui,sans-serif !important;
+  letter-spacing:.055em !important;
+  text-decoration:none !important;
+  white-space:nowrap !important;
+
+  grid-area:auto !important;
+  justify-self:start !important;
+}
+
+/* Put Order Now visually inside copy area */
+.dm91-copy + .dm91-price + .dm91-itemOrder{
+  grid-column:2 !important;
+  grid-row:2 !important;
+  align-self:start !important;
+  justify-self:start !important;
+  margin-top:-18px !important;
+}
+
+.dm91-itemOrder:hover{
+  text-decoration:underline !important;
+}
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width:1051px){
+  .dm91-item{
+    min-height:88px !important;
+    padding:9px 11px 9px 8px !important;
+  }
+
+  .dm91-name{
+    font-size:15px !important;
+  }
+}
+
+/* =========================================
+   TABLET / SMALL LAPTOP
+   ========================================= */
+
+@media (max-width:1050px){
+  .dm91-item{
+    min-height:82px !important;
+  }
+
+  .dm91-copy + .dm91-price + .dm91-itemOrder{
+    margin-top:-16px !important;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width:640px){
+
+  .dm91-item{
+    min-height:72px !important;
+    padding:7px 8px 7px 6px !important;
+    column-gap:8px !important;
+  }
+
+  .dm91-name{
+    font-size:12px !important;
+    line-height:1.24 !important;
+  }
+
+  .dm91-price{
+    max-width:82px !important;
+    font-size:8.5px !important;
+  }
+
+  .dm91-itemOrder{
+    font-size:8px !important;
+    margin-top:5px !important;
+  }
+
+  .dm91-copy + .dm91-price + .dm91-itemOrder{
+    margin-top:-14px !important;
+  }
+}
+
+/* Very small phone */
+@media (max-width:360px){
+  .dm91-item{
+    grid-template-columns:46px minmax(0,1fr) auto !important;
+    column-gap:7px !important;
+  }
+
+  .dm91-price{
+    max-width:70px !important;
+    padding:5px 6px !important;
+    font-size:8px !important;
+  }
+}
+
+</style>
+
+<link rel="stylesheet" href="mobile-nav-v94.css"><script defer src="mobile-nav-v94.js"></script>
+<style id="diamond-price-wrap-v100">
+/* V100 — price labels never clip; size pairs remain readable */
+.dm91-item{overflow:visible !important;}
+.dm91-price{
+  white-space:normal !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+  overflow-wrap:normal !important;
+  word-break:normal !important;
+  min-width:88px !important;
+  max-width:110px !important;
+  text-align:center !important;
+  line-height:1.16 !important;
+}
+@media (max-width:640px){
+  .dm91-item{
+    grid-template-columns:var(--dm91-thumb) minmax(0,1fr) minmax(86px,92px) !important;
+    overflow:visible !important;
+    column-gap:7px !important;
+  }
+  .dm91-price{
+    min-width:86px !important;
+    max-width:92px !important;
+    padding:5px 6px !important;
+    font-size:8.5px !important;
+    white-space:normal !important;
+    line-height:1.18 !important;
+  }
+}
+@media (max-width:360px){
+  .dm91-item{
+    grid-template-columns:46px minmax(0,1fr) minmax(78px,82px) !important;
+  }
+  .dm91-price{
+    min-width:78px !important;
+    max-width:82px !important;
+    font-size:7.8px !important;
+    padding:5px 5px !important;
+  }
+}
+</style>
+</head><body>
+<div class="stickyHeaderShellV83">
+<nav class="siteNav siteNavV81" data-edit-section="header-logo">
+  <a class="brandBlock brandBlockV81" href="https://diamondrestaurants.com/index.html" aria-label="Diamond Home">
+    <img src="assets/optimized-v1/diamond-full-logo-v72.webp" alt="Diamond Bakery Restaurant Sweets" class="brandFullLogoV81">
+  </a>
+
+  <div class="brandDividerV81" aria-hidden="true"></div>
+
+  <a class="brandMainV81" href="https://diamondrestaurants.com/index.html" aria-label="Diamond Home">
+    <b>DIAMOND</b>
+    <small>BAKERY | RESTAURANT | SWEETS</small>
+  </a>
+
+  <button class="hamb" id="hamb" aria-label="Open menu">☰</button>
+
+  <div class="navLinks" id="navLinks">
+    <a href="https://diamondrestaurants.com/index.html">Home</a><a href="menu.html">Menu</a><a href="https://diamondrestaurants.com/index.html#categories">Categories</a><a href="https://diamondrestaurants.com/index.html#stories">Stories</a><a href="https://diamondrestaurants.com/app.html">App</a><a href="https://diamondrestaurants.com/index.html#contact">Contact</a>
+  </div>
+
+  <div class="orderMenu" id="orderMenu">
+    <a class="navOrder orderDirectV98" href="https://uen.io/diamondrestaurant" target="_blank" rel="noopener noreferrer">Order Now</a>
+    </div>
+  </div>
+
+  <span class="visualEditHook headerDoneHook" data-hook="header-logo" hidden><img src="assets/icons/check-done.svg" alt="Done"></span>
+</nav>
+<div class="headerQuickBarV81" data-edit-section="header-quick-links" aria-label="Quick categories">
+  <a href="menu.html#bakery">Bakery</a>
+  <span aria-hidden="true"></span>
+  <a href="menu.html#restaurant">Restaurant</a>
+  <span aria-hidden="true"></span>
+  <a href="menu.html#sweets">Sweets</a>
+</div>
+</div>
+<main class="dm91-shell">
+  <header class="dm91-hero">
+    <span class="dm91-kicker">Diamond • Pure Veg</span>
+    <h1>Our Menu</h1>
+    
+  </header>
+  <div class="dm91-main">
+    <div class="dm91-tools">
+      <div class="dm91-searchRow">
+        <input class="dm91-search" id="dm91Search" type="search" inputmode="search" autocomplete="off" placeholder="Search dish or price…" aria-label="Search menu">
+        <a class="dm91-order" href="https://uen.io/diamondrestaurant" target="_blank" rel="noopener">Order now</a>
+      </div>
+      <nav class="dm91-cats" id="dm91Cats" aria-label="Menu categories"></nav>
+    </div>
+    <div class="dm91-results" id="dm91Results"><div class="dm91-empty">Loading menu…</div></div>
+  </div>
+</main>
+<footer class="footer footerV4 premiumFooter" data-edit-section="footer-links">
+  <div class="footerBrand">
+    <img loading="lazy" decoding="async" src="assets/optimized-v1/diamond-logo-hq-white-card-v64.webp" alt="Diamond">
+    <div class="footerMetaLine"><span class="pureVegBadge"><img src="assets/icons/pure-veg.svg" alt="Pure Veg"> Pure Veg</span><span>Since 2002 • Shimla</span></div>
+    <span class="visualEditHook" data-hook="footer-brand" hidden><img src="assets/icons/check-done.svg" alt="Done"></span>
+  </div>
+  <div>
+    <h3>Quick Links</h3>
+    <a class="footerLink" href="menu.html"><img src="assets/icons/menu.svg" alt="">View Full Menu</a>
+    <a class="footerLink" href="https://diamondrestaurants.com/app.html"><img src="assets/icons/app-link.svg" alt="">App & Order Links</a>
+    <a class="footerLink" href="https://diamondrestaurants.uengage.in/" target="_blank" rel="noopener"><img src="assets/icons/cart-green.svg" alt="">Mega Store</a>
+    <a class="footerLink" href="https://search.google.com/local/writereview?placeid=ChIJsR6d57d4BTkRu6lcEKPn1Eg&source=g.page.m.dd._&laa=lu-desktop-reviews-dialog-review-solicitation" target="_blank" rel="noopener"><img src="assets/icons/google-review-clean.png" alt="">Google Review</a>
+  </div>
+  <div>
+    <h3>Follow & Visit</h3>
+    <a class="footerLink" href="https://www.instagram.com/diamondbakerysweetsrestaurant?igsh=MTBqZTR3dmM1ODN3ZQ==" target="_blank" rel="noopener"><img src="assets/icons/instagram-clean.png" alt="">Instagram</a>
+    <a class="footerLink" href="https://www.facebook.com/share/1D3ha3ArBT/" target="_blank" rel="noopener"><img src="assets/icons/facebook-clean.png" alt="">Facebook</a>
+    <a class="footerLink" href="https://maps.app.goo.gl/bGiRSi4HL8HvzwQr9?g_st=ac" target="_blank" rel="noopener"><img src="assets/icons/location.svg" alt="">Open Map</a>
+    <a class="footerLink contactPending" data-edit-field="telephone" hidden href="menu.html#"><img src="assets/icons/phone.svg" alt="">Telephone</a>
+    <a class="footerLink contactPending" data-edit-field="mobile" hidden href="menu.html#"><img src="assets/icons/mobile.svg" alt="">Mobile</a>
+    <a class="footerLink contactPending" data-edit-field="whatsapp" hidden href="menu.html#"><img src="assets/icons/whatsapp.svg" alt="">WhatsApp</a>
+  </div>
+</footer><div class="copy">© 2026 Diamond Bakery, Restaurant & Sweets</div><script type="module" src="menu-v91.js"></script><script src="order-menu.js"></script>
+<button class="dm91-jump" id="dm91Top" type="button" aria-label="Back to top">↑</button>
+</body></html>
